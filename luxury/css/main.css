@@ -1,0 +1,254 @@
+body {
+  font-family: 'Sintony', sans-serif;
+}
+
+.accent {
+  color: #fea100;
+}
+
+.nav-link {
+  color: #2c465a;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 17px;
+  background-color: #fea100;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.35px;
+}
+
+.header-menu {
+  padding-top: 22px;
+  padding-bottom: 18px;
+  background-color: #ffffff;
+}
+
+.header-offer {
+  padding-top: 228px;
+  padding-bottom: 287px;
+  background: url("../img/header/header-offer.jpg.png") center no-repeat;
+  background-size: cover;
+}
+
+.header-offer__title {
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.header-offer__subtitle {
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.header-contact {
+  padding: 30px 0;
+  background-color: #edf1f3;
+  border-bottom: 1px #dde3e7;
+}
+
+.ord {
+  margin-right: 14px;
+  width: 21px;
+  height: 17px;
+  background: url("../img/header/order.png");
+}
+
+.phone {
+  max-width: 455px;
+}
+
+.phone__text {
+  background: url("../img/header/phone.png") no-repeat;
+  padding-left: 55px;
+  margin-right: 46px;
+  color: #14141d;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.phone__text span {
+  font-size: 16px;
+}
+
+.phone__digits {
+  color: #14141d;
+  font-family: "Playfair Display";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.about {
+  padding-top: 115px;
+  padding-bottom: 100px;
+}
+
+.about-promo__title {
+  margin-bottom: 39px;
+  color: #14141d;
+  font-family: "Playfair Display";
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.about-promo__text {
+  margin-bottom: 47px;
+  color: #5c6369;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.about-gallery__right {
+  margin-top: -50px;
+}
+
+.about-img {
+  margin-bottom: 10px;
+  max-width: 255px;
+}
+
+.goods {
+  background: url("../img/goods/goods-bg.jpg") no-repeat center top;
+  text-align: center;
+  padding-top: 97px;
+}
+
+.goods-title {
+  margin-bottom: 26px;
+  font-family: "Playfair Display";
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.goods-block {
+  -webkit-box-shadow: 0 24px 38px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 24px 38px rgba(0, 0, 0, 0.09);
+  margin-bottom: 128px;
+}
+
+.goods-block__img {
+  margin-bottom: 50px;
+}
+
+.goods-block__title {
+  margin-bottom: 22px;
+  font-family: "Playfair Display";
+  color: #14141d;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.goods-block__descr {
+  margin-bottom: 62px;
+  padding: 0 45px;
+  color: #5c6369;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.goods-block__details {
+  margin: 0 48px;
+  padding-top: 24px;
+  padding-bottom: 34px;
+  text-align: left;
+  border-top: 1px solid #e1e1e1;
+}
+
+.goods-block__delivery {
+  width: 78px;
+  border-right: 1px solid #e1e1e1;
+  color: #14141d;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.goods-block__delivery span {
+  color: #fe4c8d;
+}
+
+.goods-block__phone {
+  font-family: "Playfair Display";
+  color: #14141d;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.goods-block__price {
+  font-family: "Playfair Display";
+  color: #fea100;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer {
+  padding-top: 72px;
+  padding-bottom: 112px;
+  background-color: #373844;
+}
+
+.socials {
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.socials__item {
+  list-style: none;
+  margin-right: 5px;
+}
+
+.socials__item a {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  display: block;
+}
+
+.socials__item_fb a {
+  background: #3b5998 url("../img/footer/fb.png") no-repeat center center;
+}
+
+.socials__item_tw a {
+  background: #55acee url("../img/footer/tw.png") no-repeat center center;
+}
+
+.socials__item_g a {
+  background: #dd4b39 url("../img/footer/g.png") no-repeat center center;
+}
+
+.credits {
+  text-align: center;
+  color: #adb2b7;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.credits span {
+  letter-spacing: 0.97px;
+}
+
+.line {
+  background: #52535e;
+  min-height: 1px;
+}
