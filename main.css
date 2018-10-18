@@ -1,0 +1,255 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+    
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    perspective: 1px;
+    transform-style: preserve-3d;
+
+    font-family: 'Roboto';
+    color: #fff;
+
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header {
+    position: relative;
+    box-sizing: border-box;
+    padding: 30vw 0 5vw;
+
+
+
+
+    width: 100vw;
+    min-height: 100vh;
+   
+    transform-style: inherit;
+}
+
+.header-offer {
+    margin-top: -100px;
+}
+
+.header, .header::before {
+    background: 50% 50% / cover;
+}
+
+.header::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    display: block;
+    min-height: 100vh;
+
+    background-image: url(/head-bg.jpg);
+    background-size: cover;
+
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    content: '';
+}
+
+.header * {
+    margin: 0;
+    padding: 1em 0;
+
+    font-weight: 400;
+    letter-spacing: 0.4em;
+    text-align: center;
+}
+
+.blah {
+    color: #000;
+    display: block;
+    min-height: 100%;
+    transform-style: inherit;
+    padding: 0.1rem 0;
+
+
+    background: #222222;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    width: 100%;
+}
+
+.footer {
+    height: 20vh;
+    background: #eaeaea;
+}
+
+.work {
+    text-align: right;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.about {
+    width: 70%;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    letter-spacing: normal;
+    margin-bottom: 2rem;
+}
+
+.title {
+    margin-bottom: 2rem;
+
+    font-size: 2rem;
+    font-weight: 300;
+    color: #e01a1a;
+    letter-spacing: 0.2em;
+}
+
+/* skill-block */
+
+.skills span {
+    color: #e01a1a;
+}
+
+.skills-list__item{
+    position: relative;
+    display: block;
+    padding: 5px 10px;
+    width: 30%;
+}
+
+.skills-list__item:hover {
+    color: #222222;
+    background: #fff;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.skills-list__item:hover:nth-child(1)::after,
+.skills-list__item:hover:nth-child(2)::after,
+.skills-list__item:hover:nth-child(3)::after,
+.skills-list__item:hover:nth-child(4)::after,
+.skills-list__item:hover:nth-child(5)::after,
+.skills-list__item:hover:nth-child(6)::after {
+    display: block;
+}
+
+.skills-list__item:nth-child(1)::after {
+    position: absolute;
+    display: none;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    background: green;
+    z-index: -1;
+}
+
+.skills-list__item:nth-child(2)::after {
+    position: absolute;
+    display: none;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 70%;
+    background: green;
+    z-index: -1;
+}
+
+.skills-list__item:nth-child(3)::after {
+    position: absolute;
+    display: none;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    background: red;
+    z-index: -1;
+}
+
+.skills-list__item:nth-child(4)::after {
+    position: absolute;
+    display: none;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 35%;
+    background: red;
+    z-index: -1;
+}
+
+.skills-list__item:nth-child(5)::after {
+    position: absolute;
+    display: none;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+    background: yellow;
+    z-index: -1;
+}
+
+.skills-list__item:nth-child(6)::after {
+    position: absolute;
+    display: none;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 95%;
+    background: green;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
+    .skills-list__item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .about {
+        width: 100%;
+    }
+    .blah,
+    .skills,
+    .work,
+    .about {
+        text-align: left;
+    }
+}
