@@ -147,7 +147,7 @@ li a {
 
 .skills-list__item:hover {
     color: #222222;
-    background: #fff;
+    background: #4e4e4e;
     font-weight: 400;
     z-index: 1;
 }
