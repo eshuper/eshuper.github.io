@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-    if($(this).scrollTop()> 690) {
+    if($(this).scrollTop()> 765) {
         $('.htm').prop('className', 'htm1');
         $('.css').prop('className', 'css1');
         $('.js').prop('className', 'js1');
