@@ -1,62 +1,7 @@
 // data 
 const weather = [
-  {   
-      // 12jan local date time gmt+4
-      date: 1547251200000, 
-      temperature: {
-        night: -13,
-        day: -7,
-      },
-      cloudiness: "Ясно",
-      snow: false,
-      rain: false,
-    },
     {
-      // 13jan
-      date: 1547337600000,
-      temperature: {
-        night: -20,
-        day: -10,
-      },
-      cloudiness: "Ясно",
-      snow: false,
-      rain: false,
-    },
-    {
-      // 14jan
-      date: 1547424000000,
-      temperature: {
-        night: -23,
-        day: -5,
-      },
-      cloudiness: "Ясно",
-      snow: false,
-      rain: false,
-    },
-    {
-      // 15jan
-      date: 1547496000000,
-      temperature: {
-        night: -5,
-        day: 0,
-      },
-      cloudiness: "Облачно",
-      snow: false,
-      rain: true,
-    },
-    {
-      // 16jan
-      date: 1547582400000,
-      temperature: {
-        night: -13,
-        day: -7,
-      },
-      cloudiness: "Облачно",
-      snow: true,
-      rain: false,
-    },
-    {
-      // 17jan
+      // 17jan local time gmt+4
       date: 1547668800000,
       temperature: {
         night: -13,
@@ -208,6 +153,61 @@ const weather = [
       cloudiness: "Ясно",
       snow: false,
       rain: false,
+    },
+    {
+      // 31jan
+      date: 1548878400000,
+      temperature: {
+        night: -10,
+        day: -20,
+      },
+      cloudiness: "Ясно",
+      snow: false,
+      rain: false,
+    },
+    {
+      // 1feb
+      date: 1548964800000,
+      temperature: {
+        night: -10,
+        day: -20,
+      },
+      cloudiness: "Ясно",
+      snow: false,
+      rain: false,
+    },
+    {
+      // 2feb
+      date: 1549051200000,
+      temperature: {
+        night: -7,
+        day: -2,
+      },
+      cloudiness: "Облачно",
+      snow: true,
+      rain: false,
+    },
+    {
+      // 3feb
+      date: 1549137600000,
+      temperature: {
+        night: -6,
+        day: -4,
+      },
+      cloudiness: "Облачно",
+      snow: true,
+      rain: false,
+    },
+    {
+      // 4feb
+      date: 1549224000000,
+      temperature: {
+        night: -6,
+        day: -4,
+      },
+      cloudiness: "Облачно",
+      snow: true,
+      rain: false,
     }
   ]
 
@@ -220,13 +220,13 @@ const weather = [
   };
 
   function iconCheck(weather) {
-    if (weather.cloudiness == "Облачно" && weather.snow == false && weather.rain == false) {
+    if (weather.cloudiness === "Облачно" && weather.snow === false && weather.rain === false) {
       return 'wi-cloud'
-    } else if (weather.cloudiness == "Облачно" && weather.snow == true && weather.rain == false) {
+    } else if (weather.cloudiness === "Облачно" && weather.snow === true && weather.rain === false) {
       return 'wi-snow'
-    } else if (weather.cloudiness == "Облачно" && weather.snow == false && weather.rain == true) {
+    } else if (weather.cloudiness === "Облачно" && weather.snow === false && weather.rain === true) {
       return 'wi-rain'
-    } else if (weather.cloudiness == "Облачно" && weather.snow == true && weather.rain == true) {
+    } else if (weather.cloudiness === "Облачно" && weather.snow === true && weather.rain === true) {
       return 'wi-sleet'
     } else {
       return 'wi-day-sunny';
@@ -234,11 +234,11 @@ const weather = [
   };
 
   function rainfallCheck(weather) {
-    if (weather.rain == true && weather.snow == false) {
+    if (weather.rain === true && weather.snow === false) {
       return 'дождь'
-    } else if (weather.rain == true && weather.snow == true) {
+    } else if (weather.rain === true && weather.snow === true) {
       return 'дождь со снегом'
-    } else if (weather.rain == false && weather.snow == true) {
+    } else if (weather.rain === false && weather.snow === true) {
       return 'снег'
     } else {
       return 'без осадков'
