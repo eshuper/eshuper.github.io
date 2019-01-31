@@ -208,6 +208,39 @@ const weather = [
       cloudiness: "Облачно",
       snow: true,
       rain: false,
+    },
+    {
+      // 5feb
+      date: 1549310400000,
+      temperature: {
+        night: -6,
+        day: -4,
+      },
+      cloudiness: "Облачно",
+      snow: true,
+      rain: true,
+    },
+    {
+      // 6feb
+      date: 1549396800000,
+      temperature: {
+        night: -6,
+        day: -4,
+      },
+      cloudiness: "Облачно",
+      snow: true,
+      rain: true,
+    },
+    {
+      // 7feb
+      date: 1549483200000,
+      temperature: {
+        night: -10,
+        day: -20,
+      },
+      cloudiness: "Ясно",
+      snow: false,
+      rain: false,
     }
   ]
 
